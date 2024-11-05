@@ -1,4 +1,4 @@
-# Managed By : Soumya Ranjan Rout
+# Managed By : Arsad Hossain
 # Description : This Script is used to create VPC, Subnet, Internet Gateway and EC2 instances.
 
 ###################################################################################

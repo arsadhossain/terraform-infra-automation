@@ -43,7 +43,7 @@ resource "aws_launch_configuration" "web" {
 
   image_id = "ami-0767046d1677be5a0" # Ubuntu server 20.4 LTS (HVM), SSD Volume Type
   instance_type = "t2.micro"
-  key_name = "soumya-app"
+  key_name = "arsad-app"
 
   security_groups = [ aws_security_group.allow_http.id ]
   associate_public_ip_address = false

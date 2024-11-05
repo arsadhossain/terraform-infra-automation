@@ -62,7 +62,7 @@ resource "aws_instance" "db_instance" {
   security_groups = [aws_security_group.allow_app.id]
   user_data = filebase64("${path.module}/bootstrap-node-js-app.sh")
   ami = "ami-0767046d1677be5a0" # Ubuntu server 20.4 LTS (HVM), SSD Volume Type
-  key_name = "soumya-app"
+  key_name = "arsad-app"
   tags     = merge({ Name = "db-server-master" }, var.tags)
 }
 
@@ -72,7 +72,7 @@ resource "aws_instance" "db_instance1" {
   security_groups = [aws_security_group.allow_app.id]
   user_data = filebase64("${path.module}/bootstrap-node-js-app.sh")
   ami = "ami-0767046d1677be5a0" # Ubuntu server 20.4 LTS (HVM), SSD Volume Type
-  key_name = "soumya-app"
+  key_name = "arsad-app"
   tags     = merge({ Name = "db-server-slave-1" }, var.tags)
 }
 
@@ -82,6 +82,6 @@ resource "aws_instance" "db_instance2" {
   security_groups = [aws_security_group.allow_app.id]
   user_data = filebase64("${path.module}/bootstrap-node-js-app.sh")
   ami = "ami-0767046d1677be5a0" # Ubuntu server 20.4 LTS (HVM), SSD Volume Type
-  key_name = "soumya-app"
+  key_name = "arsad-app"
   tags     = merge({ Name = "db-server-slave-2" }, var.tags)
 }

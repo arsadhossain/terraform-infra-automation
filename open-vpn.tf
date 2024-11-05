@@ -46,7 +46,7 @@ resource "aws_instance" "vpn_access_server" {
   ami                         = "ami-0e6f16fc977e61dd5"
   instance_type               = "t2.micro"
   associate_public_ip_address = true
-  key_name               = "soumya-app"
+  key_name               = "arsad-app"
   vpc_security_group_ids = [aws_security_group.vpn_access_server.id]
   subnet_id              = aws_subnet.public[0].id
   tags                   = merge({ Name = "openvpn-server" }, var.tags)
